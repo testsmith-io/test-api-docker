@@ -7,11 +7,11 @@ docker-compose exec php bash -c "cd /var/www/html && composer update --no-dev"
 
 # Create DB schema
 
-`docker exec -i docker-lumen-new_mariadb_1 mysql -uroot -proot --database=sakila < ./image/mysql/scripts/sakila-schema.sql`
+`docker exec -i test-api-docker_mariadb_1 mysql -uroot -proot --database=sakila < ./image/mysql/scripts/sakila-schema.sql`
 
 # Load data
 
-`docker exec -i docker-lumen-new_mariadb_1 mysql -uroot -proot --database=sakila < ./image/mysql/scripts/sakila-data.sql`
+`docker exec -i test-api-docker_mariadb_1 mysql -uroot -proot --database=sakila < ./image/mysql/scripts/sakila-data.sql`
  
 # API endpoints
 
