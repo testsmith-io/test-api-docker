@@ -2,6 +2,9 @@
 # Start the containers
 `docker-compuse up -d`
 
+# Install application dependencies
+docker-compose exec php bash -c "cd /var/www/html && composer update --no-dev"
+
 # Create DB schema
 
 `docker exec -i docker-lumen-new_mariadb_1 mysql -uroot -proot --database=sakila < ./image/mysql/scripts/sakila-schema.sql`

@@ -5,7 +5,7 @@ FROM php:7.2-fpm
 #    && docker-php-ext-enable mysqli
 
 RUN apt-get update
-RUN apt-get upgrade -y
+RUN apt-get upgrade -y && apt-get install -y git
 RUN docker-php-ext-install pdo pdo_mysql mysqli
 
 RUN curl https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
