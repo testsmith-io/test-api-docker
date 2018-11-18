@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="47853eb3-8f6b-491e-a995-17d111b6f24c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/image/mysql/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/mysql/init-root.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/mysql/sakila-data-ext.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/mysql/sakila-schema-ext.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/mysql/scripts/sakila-data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/mysql/scripts/sakila-schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Command/AbstractCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Command/Bus/CommandBus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Command/Command.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Command/IlluminateCommandBusAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Actor/Commands/AddActorCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Actor/Commands/Handlers/ActorHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Actor/Commands/UpdateActorCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Actor/Entity/Mapper/ActorMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Actor/Repository/ActorRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Actor/Repository/Database/ActorRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Actor/Validator/ActorValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Address/Commands/AddAddressCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Address/Commands/Handlers/AddressHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Address/Commands/UpdateAddressCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Address/Entity/Mapper/AddressMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Address/Repository/AddressRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Address/Repository/Database/AddressRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Address/Validator/AddressValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Category/Commands/AddCategoryCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Category/Commands/Handlers/CategoryHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Category/Commands/UpdateCategoryCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Category/Entity/Mapper/CategoryMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Category/Repository/CategoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Category/Repository/Database/CategoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Category/Validator/CategoryValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/City/Commands/AddCityCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/City/Commands/Handlers/CityHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/City/Commands/UpdateCityCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/City/Entity/Mapper/CityMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/City/Repository/CityRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/City/Repository/Database/CityRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/City/Validator/CityValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Country/Commands/AddCountryCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Country/Commands/Handlers/CountryHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Country/Commands/UpdateCountryCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Country/Entity/Mapper/CountryMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Country/Repository/CountryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Country/Repository/Database/CountryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Country/Validator/CountryValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Customer/Commands/AddCustomerCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Customer/Commands/Handlers/CustomerHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Customer/Commands/UpdateCustomerCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Customer/Entity/Mapper/CustomerMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Customer/Repository/CustomerRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Customer/Repository/Database/CustomerRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Customer/Validator/CustomerValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Film/Commands/AddFilmCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Film/Commands/Handlers/FilmHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Film/Commands/UpdateFilmCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Film/Entity/Mapper/FilmMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Film/Repository/Database/FilmRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Film/Repository/FilmRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Film/Validator/FilmValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Inventory/Commands/AddInventoryCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Inventory/Commands/Handlers/InventoryHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Inventory/Commands/UpdateInventoryCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Inventory/Entity/Mapper/InventoryMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Inventory/Repository/Database/InventoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Inventory/Repository/InventoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Inventory/Validator/InventoryValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Language/Commands/AddLanguageCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Language/Commands/Handlers/LanguageHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Language/Commands/UpdateLanguageCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Language/Entity/Mapper/LanguageMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Language/Repository/Database/LanguageRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Language/Repository/LanguageRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Language/Validator/LanguageValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Payment/Commands/AddPaymentCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Payment/Commands/Handlers/PaymentHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Payment/Commands/UpdatePaymentCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Payment/Entity/Mapper/PaymentMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Payment/Repository/Database/PaymentRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Payment/Repository/PaymentRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Payment/Validator/PaymentValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Rental/Commands/AddRentalCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Rental/Commands/Handlers/RentalHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Rental/Commands/UpdateRentalCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Rental/Entity/Mapper/RentalMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Rental/Repository/Database/RentalRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Rental/Repository/RentalRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Rental/Validator/RentalValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Staff/Commands/AddStaffCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Staff/Commands/Handlers/StaffHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Staff/Commands/UpdateStaffCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Staff/Entity/Mapper/StaffMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Staff/Repository/Database/StaffRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Staff/Repository/StaffRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Staff/Validator/StaffValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Store/Commands/AddStoreCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Store/Commands/Handlers/StoreHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Store/Commands/UpdateStoreCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Store/Entity/Mapper/StoreMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Store/Repository/Database/StoreRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Store/Repository/StoreRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Domain/Store/Validator/StoreValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Entity/EntityInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Entity/FactoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Entity/IlluminateFactoryAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Entity/Mapper/AbstractMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Entity/Validator/Validator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Exceptions/Database/NotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Exceptions/InvalidArgumentException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Exceptions/Repository/RepositoryException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Exceptions/SakilaException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Exceptions/UnexpectedValueException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Exceptions/Validation/ValidationException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/AbstractController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/ActorController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/AddressController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/CityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/CountryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/CustomerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/DBController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/FilmController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/InventoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/LanguageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/PaymentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/RentalController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/StaffController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/StoreController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Middleware/CorsMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Http/Middleware/FractalMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Models/AbstractModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Models/ActorModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Models/AddressModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Models/CategoryModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Models/CityModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Models/CountryModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Models/CustomerModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Models/FilmModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Models/InventoryModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Models/LanguageModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Models/PaymentModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Models/RentalModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Models/StaffModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Models/StoreModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Providers/CommandBusProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Providers/TestApiServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Repository/Database/AbstractDatabaseRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Repository/Database/ConnectionInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Repository/Database/Illuminate/Connection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Repository/Database/Illuminate/Query/Builder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Repository/Database/Query/BuilderInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Repository/Database/Table/NameResolver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Repository/Database/Table/SimpleNameResolver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Repository/RepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Transformer/ActorTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Transformer/AddressTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Transformer/CategoryTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Transformer/CityTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Transformer/CountryTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Transformer/CustomerTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Transformer/FilmTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Transformer/FractalTransformerAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Transformer/InventoryTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Transformer/LanguageTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Transformer/PaymentTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Transformer/RentalTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Transformer/StaffTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Transformer/StoreTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Transformer/Transformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Validators/AbstractValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Validators/ActorValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Validators/AddressValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Validators/CategoryValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Validators/CityValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Validators/CountryValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Validators/CustomerValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Validators/FilmValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Validators/InventoryValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Validators/LanguageValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Validators/PaymentValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Validators/RentalValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Validators/StaffValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/app/Validators/StoreValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/lumen/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/image/php/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/app/Events/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/app/Events/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/app/Events/ExampleEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/app/Events/ExampleEvent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/ExampleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/app/Http/Controllers/ExampleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/app/Jobs/ExampleJob.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/app/Jobs/ExampleJob.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/app/Jobs/Job.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/app/Jobs/Job.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/app/Listeners/ExampleListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/app/Listeners/ExampleListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/bootstrap/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/storage/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/storage/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/storage/framework/cache/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/storage/framework/cache/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/storage/framework/views/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/storage/framework/views/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/lumen/storage/logs/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/www/lumen/storage/logs/.gitignore" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/lumen/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image/mysql/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="255">
+                <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image/php/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image/nginx/default.conf">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="auth.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/lumen/config/auth.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="sakila-schema.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image/mysql/scripts/sakila-schema.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1267" />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>500</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/www/lumen</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/www/lumen/.env_testing" />
+        <option value="$PROJECT_DIR$/www/lumen/app/Providers/TestApiServiceProvider.php" />
+        <option value="$PROJECT_DIR$/www/lumen/app/Providers/CommandBusProvider.php" />
+        <option value="$PROJECT_DIR$/www/lumen/public/.htaccess" />
+        <option value="$PROJECT_DIR$/www/lumen/.htaccess" />
+        <option value="$PROJECT_DIR$/www/lumen/app/Exceptions/SakilaException.php" />
+        <option value="$PROJECT_DIR$/www/lumen/bootstrap/app.php" />
+        <option value="$PROJECT_DIR$/wwwxx/lumen/routes/web.php" />
+        <option value="$PROJECT_DIR$/wwwxx/lumen/public/index.php" />
+        <option value="$PROJECT_DIR$/www/lumen/public/index.php" />
+        <option value="$PROJECT_DIR$/image/mysql/Dockerfile" />
+        <option value="$PROJECT_DIR$/image/mysql/scripts/init-root.sql" />
+        <option value="$PROJECT_DIR$/image/php/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/www/lumen/.env" />
+        <option value="$PROJECT_DIR$/www/lumen/routes/web.php" />
+        <option value="$PROJECT_DIR$/www/lumen/readme.md" />
+        <option value="$PROJECT_DIR$/www/lumen/composer.json" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/image/mysql/scripts/sakila-schema.sql" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="868" />
+    <option name="y" value="23" />
+    <option name="width" value="1692" />
+    <option name="height" value="1529" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="docker-lumen-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-lumen-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="docker-lumen-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-lumen-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="image" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="docker-lumen-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-lumen-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="image" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mysql" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="docker-lumen-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-lumen-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="image" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mysql" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="docker-lumen-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-lumen-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="image" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nginx" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="docker-lumen-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-lumen-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="image" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="docker-lumen-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-lumen-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="docker-lumen-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-lumen-new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lumen" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/image/mysql" />
+      <recent name="$PROJECT_DIR$/image/mysql/scripts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/image/mysql" />
+      <recent name="$PROJECT_DIR$/www/lumen" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47853eb3-8f6b-491e-a995-17d111b6f24c" name="Default" comment="" />
+      <created>1539022770949</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539022770949</updated>
+      <workItem from="1539022772271" duration="505000" />
+      <workItem from="1539247229820" duration="17000" />
+      <workItem from="1539289086544" duration="6962000" />
+      <workItem from="1539322206190" duration="473000" />
+      <workItem from="1539534116164" duration="8065000" />
+      <workItem from="1539544129436" duration="315000" />
+      <workItem from="1539544472350" duration="14718000" />
+      <workItem from="1539850934766" duration="143000" />
+      <workItem from="1540028466392" duration="859000" />
+      <workItem from="1540804090754" duration="490000" />
+      <workItem from="1541066735273" duration="421000" />
+      <workItem from="1541192023364" duration="560000" />
+      <workItem from="1541775757565" duration="123000" />
+      <workItem from="1542146022982" duration="5531000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="39182000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="2560" height="1529" extended-state="6" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.27164805" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1965846" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/www/lumen/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lumen/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/mysql/scripts/sakila-data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lumen/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/mysql/scripts/sakila-schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/mysql/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/mysql/init-root.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/php/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwxx/lumen/public/index.php" />
+    <entry file="file://$PROJECT_DIR$/www/lumen/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lumen/.env_testing" />
+    <entry file="file://$PROJECT_DIR$/wwwxx/lumen/app/Providers/TestApiServiceProvider.php" />
+    <entry file="file://$PROJECT_DIR$/wwwxx/lumen/app/Command/Bus/CommandBus.php" />
+    <entry file="file://$PROJECT_DIR$/wwwxx/lumen/app/Providers/EventServiceProvider.php" />
+    <entry file="file://$PROJECT_DIR$/www/lumen/public/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwxx/lumen/storage/logs/lumen.log" />
+    <entry file="file://$PROJECT_DIR$/wwwxx/lumen/app/Providers/CommandBusProvider.php" />
+    <entry file="file://$PROJECT_DIR$/wwwxx/lumen/public/.htaccess" />
+    <entry file="file://$PROJECT_DIR$/wwwxx/lumen/.env" />
+    <entry file="file://$PROJECT_DIR$/wwwxx/lumen/.htaccess" />
+    <entry file="file://$PROJECT_DIR$/wwwxx/lumen/bootstrap/app.php" />
+    <entry file="file://$PROJECT_DIR$/www/lumen/app/Http/Middleware/Authenticate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-35" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwxx/lumen/composer.json" />
+    <entry file="file://$PROJECT_DIR$/www/lumen/bootstrap/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lumen/app/Exceptions/Database/NotFoundException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lumen/app/Exceptions/SakilaException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwxx/lumen/routes/web.php" />
+    <entry file="file://$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/ActorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-785" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwxx/lumen/public/index.php" />
+    <entry file="file://$PROJECT_DIR$/www/lumen/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lumen/storage/logs/lumen.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-59970">
+          <caret line="1341" column="164" selection-start-line="1341" selection-start-column="154" selection-end-line="1341" selection-end-column="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/mysql/init-root.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/mysql/scripts/sakila-data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lumen/.env.example" />
+    <entry file="file://$PROJECT_DIR$/www/lumen/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lumen/readme.md" />
+    <entry file="file://$PROJECT_DIR$/www/lumen/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lumen/app/Http/Controllers/Api/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1267" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/mysql/scripts/sakila-schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/nginx/default.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lumen/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lumen/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/mysql/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/php/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
