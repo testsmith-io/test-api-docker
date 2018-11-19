@@ -1,9 +1,9 @@
 
 # Start the containers
-`docker-compuse up -d`
+`docker-compose up -d`
 
 # Install application dependencies
-docker-compose exec php bash -c "cd /var/www/html && composer update --no-dev"
+`docker-compose exec php bash -c "cd /var/www/html && composer update --no-dev"`
 
 # Create DB schema
 
